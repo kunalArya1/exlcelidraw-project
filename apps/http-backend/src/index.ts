@@ -1,7 +1,7 @@
-const express = require("express");
+import express from "express";
 const app = express();
-const userRouter = require("./routes/user.routes.js");
-const dotenv = require("dotenv");
+import userRouter from "./routes/user.routes";
+import dotenv from "dotenv";
 
 app.use(express.json());
 dotenv.config({
